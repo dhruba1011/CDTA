@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  padding-top: 100px;
+}
 html, body {
   height: 100%;
   font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
-  background-color: #e4f19b;
+  background-color: #f2c3f7;
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -17,11 +19,15 @@ html, body {
 
 /* Header */
 header {
-  background-color: #e4f19b;
+  background-color: #940781;
   color: #fff;
   padding: 15px 20px;
   text-align: center;
-  position: relative;
+  position: fixed;      /* make it sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header h1 {
@@ -31,7 +37,7 @@ header h1 {
 
 /* Navigation Bar */
 nav {
-  background-color:#a1821c;
+  background-color: #f075ea;
   padding: 10px 0;
   transition: all 0.3s ease;
 }
@@ -56,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #4f5c08;
+  background-color: #d638db;
   transform: translateY(-2px);
 }
 
@@ -113,19 +119,19 @@ main {
 
 h1 {
   font-size: 1.2rem;
-  color: #45a50e;
+  color: #5612f5;
   margin-bottom: 15px;
   animation: slideIn 0.5s ease;
 }
 
 .main-heading {
   font-size: 1.4rem;
-  color: #313d03;
+  color: #dbf1f7;
   margin-bottom: 10px;
 }
 
 h2 {
-  color: #13d60c;
+  color: #2183e6;
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
   font-size: 1.3rem;
@@ -172,7 +178,7 @@ li:hover {
 
 /* Footer */
 footer {
-  background-color: #a1821c;
+  background-color: #ee43d1;
   color: #fff;
   text-align: center;
   padding: 15px 10px;
